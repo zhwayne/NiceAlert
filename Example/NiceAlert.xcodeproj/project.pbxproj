@@ -39,10 +39,10 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		60E33FD2F8A118851C9BAB37 /* Pods-NiceAlert_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiceAlert_Tests.debug.xcconfig"; path = "Target Support Files/Pods-NiceAlert_Tests/Pods-NiceAlert_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		694C3DC8F91E7B57486EDC13 /* NiceAlert.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = NiceAlert.podspec; path = ../NiceAlert.podspec; sourceTree = "<group>"; };
+		694C3DC8F91E7B57486EDC13 /* NiceAlert.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NiceAlert.podspec; path = ../NiceAlert.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6B04C0C36522F0DE736D3821 /* Pods-NiceAlert_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiceAlert_Example.release.xcconfig"; path = "Target Support Files/Pods-NiceAlert_Example/Pods-NiceAlert_Example.release.xcconfig"; sourceTree = "<group>"; };
-		75A89A95891080A7D9D81ECB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		8D12FEEBD03011F35F4BA175 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		75A89A95891080A7D9D81ECB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8D12FEEBD03011F35F4BA175 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		AE84D441A359369FB5DB2BB6 /* Pods_NiceAlert_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NiceAlert_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5E354DEED75517E939800E5 /* Pods-NiceAlert_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiceAlert_Example.debug.xcconfig"; path = "Target Support Files/Pods-NiceAlert_Example/Pods-NiceAlert_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		EDF75C52247DDADE5CB29328 /* Pods-NiceAlert_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiceAlert_Tests.release.xcconfig"; path = "Target Support Files/Pods-NiceAlert_Tests/Pods-NiceAlert_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -86,7 +86,6 @@
 				60E33FD2F8A118851C9BAB37 /* Pods-NiceAlert_Tests.debug.xcconfig */,
 				EDF75C52247DDADE5CB29328 /* Pods-NiceAlert_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,10 +212,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = BS4TL98W43;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = BS4TL98W43;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -227,6 +228,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -314,10 +316,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NiceAlert_Example/Pods-NiceAlert_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/NiceAlert/NiceAlert.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NiceAlert.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -478,13 +482,15 @@
 			baseConfigurationReference = C5E354DEED75517E939800E5 /* Pods-NiceAlert_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BS4TL98W43;
 				INFOPLIST_FILE = NiceAlert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhwayne.demo.NiceAlert-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -493,13 +499,15 @@
 			baseConfigurationReference = 6B04C0C36522F0DE736D3821 /* Pods-NiceAlert_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BS4TL98W43;
 				INFOPLIST_FILE = NiceAlert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhwayne.demo.NiceAlert-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -507,6 +515,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 60E33FD2F8A118851C9BAB37 /* Pods-NiceAlert_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = BS4TL98W43;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -529,6 +538,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EDF75C52247DDADE5CB29328 /* Pods-NiceAlert_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = BS4TL98W43;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

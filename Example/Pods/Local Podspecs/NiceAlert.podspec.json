@@ -1,0 +1,29 @@
+{
+  "name": "NiceAlert",
+  "version": "0.1.0",
+  "summary": "Easily create beautiful alert and action sheet.",
+  "description": "Easily create beautiful alert and action sheet..",
+  "homepage": "https://github.com/zhwayne/NiceAlert",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "iya": "mrzhwayne@163.com"
+  },
+  "source": {
+    "git": "https://github.com/iya/NiceAlert.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "NiceAlert/Classes/**/*",
+  "dependencies": {
+    "SnapKit": [
+      "~> 5.0.0"
+    ]
+  },
+  "swift_versions": "5.0",
+  "swift_version": "5.0"
+}
