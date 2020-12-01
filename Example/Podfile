@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'NiceAlert_Example' do
+  pod 'NiceAlert', :path => '../'
+
+  target 'NiceAlert_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
