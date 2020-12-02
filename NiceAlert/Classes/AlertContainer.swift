@@ -9,10 +9,12 @@ import UIKit
 
 public protocol AlertContainer {
     var contentView: UIView { get }
+}
+
+extension AlertContainer {
+    func add(action: AlertAction) {}
+    func add(actions: [AlertAction]) {}
     
-    func add(action: AlertAction)
-    func add(actions: [AlertAction])
-    
-    func show(in view: UIView)
-    func dismiss(completion: (() -> Void)?)
+    func show(in view: UIView) {}
+    func dismiss(completion: (() -> Void)? = nil) {}
 }

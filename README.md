@@ -1,4 +1,4 @@
-# NiceAlert
+# NiceAlert(Semi-finished)
 
 [![CI Status](https://img.shields.io/travis/iya/NiceAlert.svg?style=flat)](https://travis-ci.org/iya/NiceAlert)
 [![Version](https://img.shields.io/cocoapods/v/NiceAlert.svg?style=flat)](https://cocoapods.org/pods/NiceAlert)
@@ -12,13 +12,6 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Requirements
 
 ## Installation
-
-NiceAlert is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'NiceAlert'
-```
 
 ## Author
 

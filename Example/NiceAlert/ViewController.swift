@@ -15,7 +15,22 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let a = AlertAction(.title("hi"))
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        
+        let alert = ActionSheetView(title: "Test title")
+        let cancel = AlertAction(.title("Cancel"), style: .cancel) { (action) in
+            print(action)
+        }
+        let ok = AlertAction(.title("OK"), style: .default) { (action) in
+            print(action)
+        }
+        alert.add(actions: [ok, cancel])
+        alert.show(in: view)
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,5 +38,6 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
 }
 

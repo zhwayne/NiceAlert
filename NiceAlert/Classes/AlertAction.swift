@@ -39,10 +39,25 @@ public extension AlertAction {
 }
 
 public extension AlertAction {
-    enum Style {
+    enum Style: Equatable {
         case `default`
         case cancel
         case destructive
         case custom(color: UIColor)
+    }
+}
+
+
+public protocol AlertActionStyleColor {}
+extension AlertAction.Style: AlertActionStyleColor {}
+
+public extension AlertActionStyleColor where Self == AlertAction.Style {
+    var color: UIColor {
+        switch self {
+        case .default: return UIColor.systemTeal
+        case .cancel: return UIColor.lightGray
+        case .destructive: return UIColor.systemRed
+        case .custom(color: let color): return color
+        }
     }
 }

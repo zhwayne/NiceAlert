@@ -1,0 +1,5 @@
+use_frameworks!
+
+target 'NiceAlert' do
+  pod 'SnapKit', '~> 5.0.0'
+end
