@@ -8,8 +8,8 @@
 import UIKit
 
 
-public struct AlertAction {
-    public typealias Handler = (_ action: Self) -> Void
+public class Action {
+    public typealias Handler = (_ action: Action) -> Void
     
     public let content: Content
     public let style: Style
@@ -21,25 +21,38 @@ public struct AlertAction {
         self.handler = handler
     }
     
-    public var host: AlertContainer?
+    public internal(set) var alert: Container?
     
     public var allowAutoDismiss = true
     
     public var isEnabled = true {
         didSet {
-            
+            if let button = alert?.contentView.viewWithTag(hashValue) as? ActionButton {
+                button.isEnabled = isEnabled
+            }
         }
     }
 }
 
-public extension AlertAction {
-    enum Content {
+extension Action: Hashable {
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(content)
+        hasher.combine(style)
+    }
+    
+    public static func == (lhs: Action, rhs: Action) -> Bool {
+        return lhs.content == rhs.content && lhs.style == rhs.style
+    }
+}
+
+public extension Action {
+    enum Content: Hashable {
         case title(String)
     }
 }
 
-public extension AlertAction {
-    enum Style: Equatable {
+public extension Action {
+    enum Style: Hashable {
         case `default`
         case cancel
         case destructive
@@ -49,13 +62,13 @@ public extension AlertAction {
 
 
 public protocol AlertActionStyleColor {}
-extension AlertAction.Style: AlertActionStyleColor {}
+extension Action.Style: AlertActionStyleColor {}
 
-public extension AlertActionStyleColor where Self == AlertAction.Style {
+public extension AlertActionStyleColor where Self == Action.Style {
     var color: UIColor {
         switch self {
         case .default: return UIColor.systemTeal
-        case .cancel: return UIColor.lightGray
+        case .cancel: return UIColor.systemGray
         case .destructive: return UIColor.systemRed
         case .custom(color: let color): return color
         }

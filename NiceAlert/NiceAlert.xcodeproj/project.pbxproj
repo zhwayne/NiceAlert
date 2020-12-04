@@ -7,24 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B25CEE12579D42100687918 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B25CEE02579D42100687918 /* ActionButton.swift */; };
+		0B25CF42257A1F7D00687918 /* BackgroundProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B25CF41257A1F7D00687918 /* BackgroundProvider.swift */; };
 		0B3C1D7725764094009D839F /* NiceAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B3C1D7525764094009D839F /* NiceAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0B3C1D82257640C4009D839F /* AlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3C1D80257640C4009D839F /* AlertAction.swift */; };
-		0B3C1D8725764362009D839F /* AlertContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3C1D8625764362009D839F /* AlertContainer.swift */; };
-		0B3C1D98257648DE009D839F /* AlertBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3C1D97257648DE009D839F /* AlertBackgroundView.swift */; };
-		0B3C1D9B25764A23009D839F /* ActionSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3C1D9A25764A23009D839F /* ActionSheetView.swift */; };
-		0B80A7942577320300947898 /* AlertCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80A7932577320300947898 /* AlertCustomizable.swift */; };
+		0B3C1D82257640C4009D839F /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3C1D80257640C4009D839F /* Action.swift */; };
+		0B3C1D8725764362009D839F /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3C1D8625764362009D839F /* Container.swift */; };
+		0B3C1D98257648DE009D839F /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3C1D97257648DE009D839F /* BackgroundView.swift */; };
+		0B3C1D9B25764A23009D839F /* ActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3C1D9A25764A23009D839F /* ActionSheet.swift */; };
 		84253896AD29B31E289DE62D /* Pods_NiceAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 481BBBBC2EC1A86A64681407 /* Pods_NiceAlert.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B25CEE02579D42100687918 /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		0B25CF41257A1F7D00687918 /* BackgroundProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundProvider.swift; sourceTree = "<group>"; };
 		0B3C1D7225764094009D839F /* NiceAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NiceAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B3C1D7525764094009D839F /* NiceAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NiceAlert.h; sourceTree = "<group>"; };
 		0B3C1D7625764094009D839F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0B3C1D80257640C4009D839F /* AlertAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertAction.swift; sourceTree = "<group>"; };
-		0B3C1D8625764362009D839F /* AlertContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertContainer.swift; sourceTree = "<group>"; };
-		0B3C1D97257648DE009D839F /* AlertBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertBackgroundView.swift; sourceTree = "<group>"; };
-		0B3C1D9A25764A23009D839F /* ActionSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetView.swift; sourceTree = "<group>"; };
-		0B80A7932577320300947898 /* AlertCustomizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertCustomizable.swift; sourceTree = "<group>"; };
+		0B3C1D80257640C4009D839F /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		0B3C1D8625764362009D839F /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		0B3C1D97257648DE009D839F /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		0B3C1D9A25764A23009D839F /* ActionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheet.swift; sourceTree = "<group>"; };
 		481BBBBC2EC1A86A64681407 /* Pods_NiceAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NiceAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A0E122F4B5E848553B3F15 /* Pods-NiceAlert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiceAlert.release.xcconfig"; path = "Target Support Files/Pods-NiceAlert/Pods-NiceAlert.release.xcconfig"; sourceTree = "<group>"; };
 		F904821444000F0F2AF94FB2 /* Pods-NiceAlert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiceAlert.debug.xcconfig"; path = "Target Support Files/Pods-NiceAlert/Pods-NiceAlert.debug.xcconfig"; sourceTree = "<group>"; };
@@ -73,11 +75,12 @@
 		0B3C1D7F257640C4009D839F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				0B3C1D80257640C4009D839F /* AlertAction.swift */,
-				0B3C1D8625764362009D839F /* AlertContainer.swift */,
-				0B3C1D97257648DE009D839F /* AlertBackgroundView.swift */,
-				0B3C1D9A25764A23009D839F /* ActionSheetView.swift */,
-				0B80A7932577320300947898 /* AlertCustomizable.swift */,
+				0B3C1D80257640C4009D839F /* Action.swift */,
+				0B3C1D8625764362009D839F /* Container.swift */,
+				0B3C1D97257648DE009D839F /* BackgroundView.swift */,
+				0B25CF41257A1F7D00687918 /* BackgroundProvider.swift */,
+				0B3C1D9A25764A23009D839F /* ActionSheet.swift */,
+				0B25CEE02579D42100687918 /* ActionButton.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -203,11 +206,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B3C1D98257648DE009D839F /* AlertBackgroundView.swift in Sources */,
-				0B3C1D8725764362009D839F /* AlertContainer.swift in Sources */,
-				0B80A7942577320300947898 /* AlertCustomizable.swift in Sources */,
-				0B3C1D9B25764A23009D839F /* ActionSheetView.swift in Sources */,
-				0B3C1D82257640C4009D839F /* AlertAction.swift in Sources */,
+				0B25CF42257A1F7D00687918 /* BackgroundProvider.swift in Sources */,
+				0B3C1D98257648DE009D839F /* BackgroundView.swift in Sources */,
+				0B3C1D8725764362009D839F /* Container.swift in Sources */,
+				0B3C1D9B25764A23009D839F /* ActionSheet.swift in Sources */,
+				0B3C1D82257640C4009D839F /* Action.swift in Sources */,
+				0B25CEE12579D42100687918 /* ActionButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,7 +352,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = NiceAlert/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -374,7 +378,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = NiceAlert/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

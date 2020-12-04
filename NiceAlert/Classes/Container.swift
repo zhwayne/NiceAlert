@@ -1,5 +1,5 @@
 //
-//  AlertContainer.swift
+//  Container.swift
 //  NiceAlert
 //
 //  Created by iya on 2020/12/1.
@@ -7,13 +7,14 @@
 
 import UIKit
 
-public protocol AlertContainer {
+public protocol Container {
     var contentView: UIView { get }
+    var backgroundProvider: BackgroundProvider? { get }
 }
 
-extension AlertContainer {
-    func add(action: AlertAction) {}
-    func add(actions: [AlertAction]) {}
+extension Container {
+    func add(action: Action) {}
+    func add(actions: [Action]) {}
     
     func show(in view: UIView) {}
     func dismiss(completion: (() -> Void)? = nil) {}
